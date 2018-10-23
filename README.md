@@ -75,13 +75,13 @@ After selecting yes to save the settings, the machine will reboot. as soon as th
 
 Select the flash drive and press enter to boot. on the screen that pops up, select "Try ubuntu without installing" or the equivalent option. 
 
-## Install Ubuntu
+## 5. Install Ubuntu
 
 Once the live desktop loads, open a terminal and run the following command (without quotes) 'sudo rmmod ideapad_laptop'. This command will enable wifi. If you are using a wired connection, this step isn't necessary, and a later step will permanently disable this module so wifi always works. 
 
 Select the "Install Ubuntu" icon on the desktop and follow the wizard to install Ubuntu on your desired drive. Once completed, select the option to restart the computer.
 
-## Boot Ubuntu with Nouveau modeset disabled.
+## 6. Boot Ubuntu with Nouveau modeset disabled.
 
 Due to the Nvidia Optimus switchable graphics, booting without modeset disabled will result in a non working desktop. To disable modesetting, after the Legion boot screen but before Ubuntu start loading, press the escape button until you see the Grub boot menu. on this screen, highlight the Ubuntu option and press e. On the screen that follows, find the line containing "quiet splash" and edit it so that it reads "quiet splash nouveau.modeset=0". Press F10 to boot with the options. 
 
