@@ -28,3 +28,14 @@ However this should work on all configurations.
   ###### The current reccomended versions of Ubuntu are as follows
     * LTS: 18.04.1 or latest point release
     * Non-LTS: 18.10
+
+
+Now that the important information is out of the way, let's begin
+
+## 1. Download the Ubuntu disk image and imaging software
+* Ubuntu
+  * [18.04.1 LTS](http://releases.ubuntu.com/18.04/ubuntu-18.04.1-desktop-amd64.iso) 
+  * [18.10](http://releases.ubuntu.com/18.10/ubuntu-18.10-desktop-amd64.iso)
+* [Etcher](https://etcher.io/)
+
+## 2. Using Etcher, write the image to a USB Drive
