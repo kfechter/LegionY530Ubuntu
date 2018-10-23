@@ -1,4 +1,4 @@
-## Use the [master]( "master branch") branch, as things here have not been tested
+## Use the [master](https://github.com/kfechter/LegionY530Ubuntu/tree/master "master branch") branch, as things here have not been tested
 
 
 # Installing Ubuntu on the Legion Y530
