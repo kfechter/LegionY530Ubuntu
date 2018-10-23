@@ -41,3 +41,7 @@ Now that the important information is out of the way, let's begin
 * [Etcher](https://etcher.io/)
 
 ## 2. Using Etcher, write the image to a USB Drive
+
+After installing and opening Etcher, select your USB device and downloaded .iso and press the button labeled Flash!
+
+![Etcher Screenshot](https://github.com/kfechter/LegionY530Ubuntu/raw/master/Images/etcher3.PNG "Etcher Screenshot")
