@@ -85,6 +85,6 @@ Select the "Install Ubuntu" icon on the desktop and follow the wizard to install
 
 Due to the Nvidia Optimus switchable graphics, booting without modeset disabled will result in a non working desktop. To disable modesetting, after the Legion boot screen but before Ubuntu start loading, press the escape button until you see the Grub boot menu. on this screen, highlight the Ubuntu option and press e. On the screen that follows, find the line containing "quiet splash" and edit it so that it reads "quiet splash nouveau.modeset=0". Press F10 to boot with the options. 
 
-![]()
+![Grub Menu](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/master/Images/20181022_230837.jpg "Grub Menu")
 
-![]()
+![Grub Edit](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/master/Images/20181022_230911.jpg "Grub Edit")
