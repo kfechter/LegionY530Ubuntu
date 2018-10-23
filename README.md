@@ -28,6 +28,8 @@ However this should work on all configurations.
   ###### The current reccomended versions of Ubuntu are as follows
     * LTS: 18.04.1 or latest point release
     * Non-LTS: 18.10
+    
+##### Back up your data using Windows Backup or similar before continuing
 
 
 Now that the important information is out of the way, let's begin
