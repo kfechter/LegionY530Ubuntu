@@ -77,7 +77,7 @@ Select the flash drive and press enter to boot. on the screen that pops up, sele
 
 ## 5. Install Ubuntu
 
-Once the live desktop loads, open a terminal and run the following command (without quotes) 'sudo rmmod ideapad_laptop'. This command will enable wifi. If you are using a wired connection, this step isn't necessary, and a later step will permanently disable this module so wifi always works. 
+Once the live desktop loads, open a terminal and run the following command `sudo rmmod ideapad_laptop`. This command will enable wifi. If you are using a wired connection, this step isn't necessary, and a later step will permanently disable this module so wifi always works. 
 
 Select the "Install Ubuntu" icon on the desktop and follow the wizard to install Ubuntu on your desired drive. Once completed, select the option to restart the computer.
 
@@ -88,3 +88,39 @@ Due to the Nvidia Optimus switchable graphics, booting without modeset disabled 
 ![Grub Menu](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/master/Images/20181022_230837.jpg "Grub Menu")
 
 ![Grub Edit](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/master/Images/20181022_230911.jpg "Grub Edit")
+
+__NOTE: At this point, if you want to run the automated script, download configure.sh from the scripts directory in the repo, and run it with the following command `sudo bash ./configure.sh` (in the directory you downloaded the script to). Follow the terminal prompts and the machine will be configured and reboot. If all is successful you have completed the guide. If you want to perform the manual steps, continue to step 7 below.__
+
+## 7. Install any available updates
+
+once you are at the desktop, open the terminal and run `sudo rmmod ideapad_laptop` if you are using wifi. without closing the terminal, run the following command `sudo apt-update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, leave the terminal open.
+
+## 8. Permanently blacklist ideapad_laptop
+
+To allow Wi-Fi to work every boot without having to use rmmod, the ideapad_laptop module must be added to the modprobe blacklist.
+
+run the command `sudo gedit /etc/modprobe.d/blacklist.conf` and add blacklist ideapad_laptop to the end of the file. Save changes and close the editor. 
+
+![Edit Blacklist](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/master/Images/Ubuntu.png "Editing Blacklist")
+
+## 9. Install Nvidia drivers and Nvidia-prime packages. 
+
+In the terminal, run the following command `sudo apt install nvidia-driver-390 nvidia-prime`. Follow all the prompts to install the drivers and required packages.
+
+## 10. Verify that the Nvidia drivers and Prime packages are installed and configured correctly.
+run the following series of commands and verify the output
+
+```
+prime-select query 
+``` 
+Should output 'nvidia'
+```
+sudo prime-select intel 
+```
+Should output text similar to 'Selecting profile intel'
+```
+prime-select query 
+```
+Should now output 'intel'
+
+If the above commands complete successfully, then you have successfully configured your Legion Y530 with Ubuntu.
