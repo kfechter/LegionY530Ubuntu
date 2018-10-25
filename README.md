@@ -1,6 +1,3 @@
-## Use the [master](https://github.com/kfechter/LegionY530Ubuntu/tree/master "master branch") branch, as things here may not have been tested
-
-
 # Installing Ubuntu on the Legion Y530
 
 This repository provides scripts and a step by step on how to get Ubuntu running on the Lenovo Legion Y530.
