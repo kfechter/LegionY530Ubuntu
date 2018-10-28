@@ -87,7 +87,7 @@ Once the live desktop loads, open a terminal and run the following command `sudo
 
 Select the "Install Ubuntu" icon on the desktop and follow the wizard to install Ubuntu on your desired drive. Once completed, select the option to restart the computer.
 
-__NOTE: At this point, if you want to run the automated script, download configure.sh from the scripts directory in the repo, and run it with the following command `sudo bash configure.sh` (in the directory you downloaded the script to). Follow the terminal prompts and the machine will be configured and reboot. If all is successful you have completed the guide. If you want to perform the manual steps, continue to step 6 below. If you are using the script, once the script has completed, continue to step 9 below__
+__NOTE: At this point, if you want to run the automated script, download configure.sh from the scripts directory in the repo, and run it with the following command `sudo bash configure.sh` (in the directory you downloaded the script to). Follow the terminal prompts and the machine will be configured and reboot. If all is successful you have completed the guide. If you want to perform the manual steps, continue to step 6 below.
 
 ## 6. Install any available updates
 
