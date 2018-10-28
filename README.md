@@ -12,16 +12,22 @@ These steps were tested on a Legion with the following Specs:
 
 However this should work on all configurations.
 
+#### If at any point the machine becomes unresponsive, you can use Magic SysRq to reboot safely
+
+Remember: *<b>R</b>eboot <b>E</b>ven <b>I</b>f <b>S</b>ystem <b>U</b>tterly <b>B</b>roken*
+
+To use Magic SysRq, hold down the right Alt key and PrtSc, and then type (In Order) R, E, I, S, U, B. The machine should then reboot. If for some reason this doesn't work, then hold the power button down to power off the machine. 
+
 ### Some things to note before Beginning:
 
 * __This guide assumes decent knowledge of the Linux command line__
 * __Following this guide will result in Windows being replaced with Ubuntu__
   * You can however, choose to install alongside your current OS
 * __Several features of the Legion will be unavailable on Linux__
-  * Screen Record Button
-  * Airplane Mode Button
-  * Camera Privacy Button
-  * Microphone Mute Button
+  * Screen Record Button - unknown to the keyboard driver?
+  * Airplane Mode Button - generates event in linux live?
+  * Camera Privacy Button - generates event in linux live?
+  * Microphone Mute Button - Works in linux live?
 * __18.10 seems to have issues with USB 3.0 flash drives. 2.0 drives work fine.__
   
   
