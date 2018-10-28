@@ -95,7 +95,7 @@ fi
 
 SELECT="$(sudo prime-select nvidia)"
 
-if [ $SELECT = "Info: selecting the nvidia profile" ]; then
+if [ "$SELECT" = "Info: selecting the nvidia profile" ]; then
     printf "Test 4 passes: Switch back to Nvidia profile\n"
 else
     printf "Expected: Info: selecting the nvidia profile\nGot: $SELECT\nTest 4 fails"
