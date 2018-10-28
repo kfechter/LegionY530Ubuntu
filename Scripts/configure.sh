@@ -28,10 +28,31 @@ done
 printf "\nPerforming System Update\n"
 sudo apt update && sudo apt dist-upgrade -y
 
-
 printf "\nInstalling Nvidia Drivers and Nvidia Prime\n"
-sudo apt install nvidia-driver-390 nvidia-prime -y
 
+PS3='Which nvidia driver version do you want to install?  '
+options=("1) nvidia-driver-390" "2) nvidia-driver-410")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "1")
+            echo "Installing Nvidia driver version 390"
+	    sudo apt install nvidia-driver-390 nvidia-prime -y
+            ;;
+        "2")
+            echo "Installing Nvidia driver version 410"
+	    sudo add-apt-repository -y ppa:graphics-drivers/ppa
+	    sudo apt install nvidia-driver-410 nvidia-prime -y
+            ;;
+        "Quit")
+            break
+            ;;
+        *) 
+	    echo "invalid option, defaulting to driver 390"
+	    sudo apt install nvidia-driver-390 nvidia-prime -y
+	    ;;
+    esac
+done
 
 if ! grep -q "blacklist ideapad_laptop" /etc/modprobe.d/blacklist.conf; then
 	printf "\nAdding ideapad_laptop to modprobe blacklist.conf\n"
