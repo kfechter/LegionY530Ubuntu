@@ -4,6 +4,8 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+STATUS="PASS"
+
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 printf "\n"
@@ -61,5 +63,57 @@ if ! grep -q "blacklist ideapad_laptop" /etc/modprobe.d/blacklist.conf; then
 	printf "\nAdding ideapad_laptop to modprobe blacklist.conf\n"
 	sudo printf "\n#Blacklist the ideapad_laptop module\nblacklist ideapad_laptop" >> /etc/modprobe.d/blacklist.conf
 fi
+
+printf "\nVerifying configuration of nvidia and nvidia-prime packages."
+
+GPU="$(prime-select query)"
+
+if [ "$GPU" = "nvidia" ]; then
+    printf "\nTest 1 passes: Verify Nvidia profile is selected.\n"
+else
+    printf "\nExpected: nvidia\nGot: $GPU\nTest 1 Fails"
+    STATUS="FAIL"
+fi
+
+SELECT="$(sudo prime-select intel)"
+
+if [ "$SELECT" = "Info: selecting the intel profile" ]; then
+    printf "Test 2 passes: Select Intel profile\n"
+else
+    printf "Expected: Info: selecting the intel profile\nGot: $SELECT\nTest 2 fails\n"
+    STATUS="FAIL"
+fi
+
+GPU="$(prime-select query)"
+
+if [ "$GPU" = "intel" ]; then
+    printf "Test 3 passes: Verify Intel profile is selected\n"
+else
+    printf "Expected: intel\nGot: $GPU\nTest 3 fails\n"
+    STATUS="FAIL"
+fi
+
+SELECT="$(sudo prime-select nvidia)"
+
+if [ $SELECT = "Info: selecting the nvidia profile" ]; then
+    printf "Test 4 passes: Switch back to Nvidia profile\n"
+else
+    printf "Expected: Info: selecting the nvidia profile\nGot: $SELECT\nTest 4 fails"
+    STATUS="FAIL"
+fi
+
+GPU="$(prime-select query)"
+
+if [ "$GPU" = "nvidia" ]; then
+    printf "Test 5 passes: Verify Nvidia profile is selected\n"
+else
+    printf "Expected: nvidia\nGot: $GPU\nTest 5 fails\n"
+    STATUS="FAIL"
+fi
+
+if [ "$STATUS" != "PASS" ]; then
+    printf "\nNvidia Prime check failure, please remove all nvidia packages and try again"
+else
+    printf "Configuration tests passed. Nvidia prime is configured correctly.\n"
 
 printf "\nScript Completed! Reboot to enable functionality\n"
