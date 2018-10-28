@@ -38,11 +38,13 @@ do
         "1")
             echo "Installing Nvidia driver version 390"
 	    sudo apt install nvidia-driver-390 nvidia-prime -y
+	    break
             ;;
         "2")
             echo "Installing Nvidia driver version 410"
 	    sudo add-apt-repository -y ppa:graphics-drivers/ppa
 	    sudo apt install nvidia-driver-410 nvidia-prime -y
+	    break
             ;;
         "Quit")
             break
@@ -50,6 +52,7 @@ do
         *) 
 	    echo "invalid option, defaulting to driver 390"
 	    sudo apt install nvidia-driver-390 nvidia-prime -y
+	    break
 	    ;;
     esac
 done
