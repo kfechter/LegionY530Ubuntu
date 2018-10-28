@@ -33,7 +33,7 @@ sudo apt update && sudo apt dist-upgrade -y
 printf "\nInstalling Nvidia Drivers and Nvidia Prime\n"
 
 PS3='Which nvidia driver version do you want to install?  '
-options=("1) nvidia-driver-390" "2) nvidia-driver-410")
+options=("nvidia-driver-390" "nvidia-driver-410")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -115,5 +115,6 @@ if [ "$STATUS" != "PASS" ]; then
     printf "\nNvidia Prime check failure, please remove all nvidia packages and try again"
 else
     printf "Configuration tests passed. Nvidia prime is configured correctly.\n"
+fi
 
 printf "\nScript Completed! Reboot to enable functionality\n"
