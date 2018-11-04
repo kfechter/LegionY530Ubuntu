@@ -37,12 +37,12 @@ options=("nvidia-driver-390" "nvidia-driver-410")
 select opt in "${options[@]}"
 do
     case $opt in
-        "1")
+        "nvidia-driver-390")
             echo "Installing Nvidia driver version 390"
 	    sudo apt install nvidia-driver-390 nvidia-prime -y
 	    break
             ;;
-        "2")
+        "nvidia-driver-410")
             echo "Installing Nvidia driver version 410"
 	    sudo add-apt-repository -y ppa:graphics-drivers/ppa
 	    sudo apt install nvidia-driver-410 nvidia-prime -y
