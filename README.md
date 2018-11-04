@@ -28,6 +28,7 @@ To use Magic SysRq, hold down the right Alt key and PrtSc, and then type (In Ord
   * Airplane Mode Button - generates event in linux live?
   * Camera Privacy Button - generates event in linux live?
   * Microphone Mute Button - Works in linux live?
+  It appears these buttons are mapped by the ideapad_laptop module, which is fixed in linux kernel master branch, but not available to ubuntu yet.
 * __18.10 seems to have issues with USB 3.0 flash drives. 2.0 drives work fine.__
   
   
