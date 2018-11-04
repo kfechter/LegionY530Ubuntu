@@ -123,3 +123,9 @@ prime-select query
 Should now output 'intel'
 
 If the above commands complete successfully, then you have successfully configured your Legion Y530 with Ubuntu.
+
+# Advanced Features
+
+For multitouch touchpad gestures, you can install libinput-gestures from the below github repo.
+
+https://github.com/bulletmark/libinput-gestures
