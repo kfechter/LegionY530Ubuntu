@@ -86,11 +86,15 @@ Select the "Install Ubuntu" icon on the desktop and follow the wizard to install
 
 once you are at the desktop, open the terminal and run `sudo rmmod ideapad_laptop` if you are using wifi. without closing the terminal, run the following command `sudo apt-update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, leave the terminal open.
 
-## 8. Install Nvidia drivers and Nvidia-prime packages. 
+## 7. Use ukuu to update the kernel
+
+## 8. Get Wifi Working (For Realtek Wifi Cards)
+
+## 9. Install Nvidia drivers and Nvidia-prime packages. 
 
 In the terminal, run the following command `sudo apt install nvidia-driver-390 nvidia-prime`. Follow all the prompts to install the drivers and required packages.
 
-## 9. Verify that the Nvidia drivers and Prime packages are installed and configured correctly.
+## 10. Verify that the Nvidia drivers and Prime packages are installed and configured correctly.
 run the following series of commands and verify the output
 
 ```
