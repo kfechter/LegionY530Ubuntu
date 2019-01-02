@@ -78,17 +78,55 @@ Select the flash drive and press enter to boot. on the screen that pops up, sele
 
 ## 5. Install Ubuntu
 
-Once the live desktop loads, open a terminal and run the following command `sudo rmmod ideapad_laptop`. This command will enable wifi. If you are using a wired connection, this step isn't necessary, and a later step will permanently disable this module so wifi always works. 
+Once the live desktop loads, open a terminal and run the following command `sudo rmmod ideapad_laptop`. This command will enable wifi. If you are using a wired connection, this step isn't necessary.
+
+If the rmmod for ideapad_laptop isn't working, you may need to perform the following steps
+
+run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`
+run the command `sudo rmmod r8822be`
+run the command `sudo modprobe r8822be`
 
 Select the "Install Ubuntu" icon on the desktop and follow the wizard to install Ubuntu on your desired drive. Once completed, select the option to restart the computer.
 
 ## 6. Install any available updates
 
-once you are at the desktop, open the terminal and run `sudo rmmod ideapad_laptop` if you are using wifi. without closing the terminal, run the following command `sudo apt-update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, leave the terminal open.
+once you are at the desktop, open the terminal and run `sudo rmmod ideapad_laptop` if you are using wifi. 
+
+If the above command does not get wifi working, you may need to perform the following steps
+
+run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`
+run the command `sudo rmmod r8822be`
+run the command `sudo modprobe r8822be`
+
+Without closing the terminal, run the following command `sudo apt-update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer. After rebooting, follow the above steps for getting wifi working. the next step will get wifi working permanently.
 
 ## 7. Use ukuu to update the kernel
 
-## 8. Get Wifi Working (For Realtek Wifi Cards)
+open a terminal
+
+
+If wifi is not working, try performing the following
+
+run `sudo rmmod ideapad_laptop`
+
+If the above command does not get wifi working, you may need to perform the following steps
+
+run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`
+run the command `sudo rmmod r8822be`
+run the command `sudo modprobe r8822be`
+
+once wifi is working (or if you are using wired ethernet)
+
+run the command `sudo add-apt-repository ppa:teejee2008/ppa` and follow the prompt
+run the command ` sudo apt-get install -y ukuu`
+
+Open ukuu from the application screen, then find kernel v4.20 in the list and select it for installation.
+
+After the kernel is installed, reboot the laptop. Wifi should be working, but if it isnt perform the following
+
+run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`
+run the command `sudo rmmod r8822be`
+run the command `sudo modprobe r8822be`
 
 ## 9. Install Nvidia drivers and Nvidia-prime packages. 
 
