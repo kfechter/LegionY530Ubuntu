@@ -82,21 +82,9 @@ Once the live desktop loads, open a terminal and run the following command `sudo
 
 Select the "Install Ubuntu" icon on the desktop and follow the wizard to install Ubuntu on your desired drive. Once completed, select the option to restart the computer.
 
-__NOTE: At this point, if you want to run the automated script, download configure.sh from the scripts directory in the repo, and run it with the following command `sudo bash configure.sh` (in the directory you downloaded the script to). Follow the terminal prompts and the machine will be configured and reboot. If all is successful you have completed the guide. If you want to perform the manual steps, continue to step 6 below.__
-
-__If you are using the script, once the script is finished, you can continue to the bottom of the readme for advanced feature setup.__
-
 ## 6. Install any available updates
 
 once you are at the desktop, open the terminal and run `sudo rmmod ideapad_laptop` if you are using wifi. without closing the terminal, run the following command `sudo apt-update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, leave the terminal open.
-
-## 7. Permanently blacklist ideapad_laptop
-
-To allow Wi-Fi to work every boot without having to use rmmod, the ideapad_laptop module must be added to the modprobe blacklist.
-
-run the command `sudo gedit /etc/modprobe.d/blacklist.conf` and add blacklist ideapad_laptop to the end of the file. Save changes and close the editor. 
-
-![Edit Blacklist](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/master/Images/Ubuntu.png "Editing Blacklist")
 
 ## 8. Install Nvidia drivers and Nvidia-prime packages. 
 
