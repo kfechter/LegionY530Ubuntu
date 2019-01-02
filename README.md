@@ -29,9 +29,9 @@ To use Magic SysRq, hold down the right Alt key and PrtSc, and then type (In Ord
   * Camera Privacy Button - generates event in linux live?
   * Microphone Mute Button - Works in linux live?
   
-* __The issues with the above buttons not mapping will be fixed with the kernel upgrade to v4.20 __*
+  __The issues with the above buttons not mapping will be fixed with the kernel upgrade to v4.20 __
   
-  ###### The Recommended Version of Ubuntu is currently 18.04.2. Using other versions should work, but this guide does not cover them
+###### The Recommended Version of Ubuntu is currently 18.04.2. Using other versions should work, but this guide does not cover them
     
 ##### Back up your data using Windows Backup or similar before continuing
 
