@@ -82,9 +82,9 @@ Once the live desktop loads, open a terminal and run the following command `sudo
 
 If the rmmod for ideapad_laptop isn't working, you may need to perform the following steps
 
-run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`
-run the command `sudo rmmod r8822be`
-run the command `sudo modprobe r8822be`
+run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`    
+run the command `sudo rmmod r8822be`    
+run the command `sudo modprobe r8822be`    
 
 Select the "Install Ubuntu" icon on the desktop and follow the wizard to install Ubuntu on your desired drive. Once completed, select the option to restart the computer.
 
@@ -94,9 +94,9 @@ once you are at the desktop, open the terminal and run `sudo rmmod ideapad_lapto
 
 If the above command does not get wifi working, you may need to perform the following steps
 
-run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`
-run the command `sudo rmmod r8822be`
-run the command `sudo modprobe r8822be`
+run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`    
+run the command `sudo rmmod r8822be`    
+run the command `sudo modprobe r8822be`     
 
 Without closing the terminal, run the following command `sudo apt-update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer. After rebooting, follow the above steps for getting wifi working. the next step will get wifi working permanently.
 
@@ -111,9 +111,9 @@ run `sudo rmmod ideapad_laptop`
 
 If the above command does not get wifi working, you may need to perform the following steps
 
-run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`
-run the command `sudo rmmod r8822be`
-run the command `sudo modprobe r8822be`
+run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`    
+run the command `sudo rmmod r8822be`    
+run the command `sudo modprobe r8822be`      
 
 once wifi is working (or if you are using wired ethernet)
 
@@ -124,9 +124,9 @@ Open ukuu from the application screen, then find kernel v4.20 in the list and se
 
 After the kernel is installed, reboot the laptop. Wifi should be working, but if it isnt perform the following
 
-run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`
-run the command `sudo rmmod r8822be`
-run the command `sudo modprobe r8822be`
+run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`    
+run the command `sudo rmmod r8822be`    
+run the command `sudo modprobe r8822be`     
 
 ## 9. Install Nvidia drivers and Nvidia-prime packages. 
 
