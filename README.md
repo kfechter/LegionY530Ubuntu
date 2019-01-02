@@ -80,11 +80,7 @@ Select the flash drive and press enter to boot. on the screen that pops up, sele
 
 Once the live desktop loads, open a terminal and run the following command `sudo rmmod ideapad_laptop`. This command will enable wifi. If you are using a wired connection, this step isn't necessary.
 
-If the rmmod for ideapad_laptop isn't working, you may need to perform the following steps
-
-run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`    
-run the command `sudo rmmod r8822be`    
-run the command `sudo modprobe r8822be`    
+If the above command does not get wifi working, you may need to perform steps under "Additional Notes" at the bottom.  
 
 Select the "Install Ubuntu" icon on the desktop and follow the wizard to install Ubuntu on your desired drive. Once completed, select the option to restart the computer.
 
@@ -92,11 +88,7 @@ Select the "Install Ubuntu" icon on the desktop and follow the wizard to install
 
 once you are at the desktop, open the terminal and run `sudo rmmod ideapad_laptop` if you are using wifi. 
 
-If the above command does not get wifi working, you may need to perform the following steps
-
-run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`    
-run the command `sudo rmmod r8822be`    
-run the command `sudo modprobe r8822be`     
+If the above command does not get wifi working, you may need to perform steps under "Additional Notes" at the bottom.    
 
 Without closing the terminal, run the following command `sudo apt-update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer. After rebooting, follow the above steps for getting wifi working. the next step will get wifi working permanently.
 
@@ -109,11 +101,7 @@ If wifi is not working, try performing the following
 
 run `sudo rmmod ideapad_laptop`
 
-If the above command does not get wifi working, you may need to perform the following steps
-
-run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`    
-run the command `sudo rmmod r8822be`    
-run the command `sudo modprobe r8822be`      
+If the above command does not get wifi working, you may need to perform steps under "Additional Notes" at the bottom.  
 
 once wifi is working (or if you are using wired ethernet)
 
@@ -124,9 +112,7 @@ Open ukuu from the application screen, then find kernel v4.20 in the list and se
 
 After the kernel is installed, reboot the laptop. Wifi should be working, but if it isnt perform the following
 
-run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`    
-run the command `sudo rmmod r8822be`    
-run the command `sudo modprobe r8822be`     
+  
 
 ## 9. Install Nvidia drivers and Nvidia-prime packages. 
 
@@ -149,6 +135,16 @@ prime-select query
 Should now output 'intel'
 
 If the above commands complete successfully, then you have successfully configured your Legion Y530 with Ubuntu.
+
+# Additional Notes
+
+### Wifi Fix for Realtek Cards
+
+If your laptop has a Realtek Card, you will notice that doing the rmmod on ideapad_laptop won't fix the wifi. to get the wifi working, perform the following steps.
+
+run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`    
+run the command `sudo rmmod r8822be`    
+run the command `sudo modprobe r8822be`   
 
 # Advanced Features
 
