@@ -1,6 +1,6 @@
 :no_entry_sign: 
-### If you find yourself reading this, you have stumbled upon a development version of the guide
-### View the master version [here](https://github.com/kfechter/LegionY530Ubuntu)
+#### If you find yourself reading this, you have stumbled upon a development version of the guide
+#### View the master version [here](https://github.com/kfechter/LegionY530Ubuntu)
 
 # Installing Ubuntu on the Legion Y530
 
