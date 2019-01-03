@@ -1,4 +1,4 @@
-:no_entry_sign: 
+:no_entry_sign: Development Stuff Ahead :no_entry_sign:
 #### If you find yourself reading this, you have stumbled upon a development version of the guide
 #### View the master version [here](https://github.com/kfechter/LegionY530Ubuntu)
 
