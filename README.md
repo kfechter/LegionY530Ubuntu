@@ -1,3 +1,7 @@
+:no_entry_sign: 
+### If you find yourself reading this, you have stumbled upon a development version of the guide
+### View the master version [here](https://github.com/kfechter/LegionY530Ubuntu)
+
 # Installing Ubuntu on the Legion Y530
 
 This repository provides scripts and a step by step on how to get Ubuntu running on the Lenovo Legion Y530.
