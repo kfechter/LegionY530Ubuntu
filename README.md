@@ -120,7 +120,9 @@ After the kernel is installed, reboot the laptop. Wifi should be working, but if
 
 ## 9. Install Nvidia drivers and Nvidia-prime packages. 
 
-In the terminal, run the following command `sudo apt install nvidia-driver-390 nvidia-prime`. Follow all the prompts to install the drivers and required packages.
+In the terminal, run the following commands, following any prompts
+`sudo add-apt-repository ppa:graphics-drivers/ppa`
+`sudo apt install nvidia-driver-415 nvidia-prime`
 
 ## 10. Verify that the Nvidia drivers and Prime packages are installed and configured correctly.
 run the following series of commands and verify the output
@@ -141,6 +143,9 @@ Should now output 'intel'
 If the above commands complete successfully, then you have successfully configured your Legion Y530 with Ubuntu.
 
 # Additional Notes
+
+### Nvidia Switching
+With kernel 4.20, rebooting is no longer necessary to switch profiles, however log out and log in is still required.
 
 ### Wifi Fix for Realtek Cards
 
