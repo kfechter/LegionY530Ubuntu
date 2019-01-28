@@ -153,7 +153,13 @@ If your laptop has a Realtek Card, you will notice that doing the rmmod on ideap
 
 run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`    
 run the command `sudo rmmod r8822be`    
-run the command `sudo modprobe r8822be`   
+run the command `sudo modprobe r8822be`
+
+### Configuring Audio Jack to Work With Microphones
+
+run the command `/etc/modprobe.d/alsa-base.conf`
+add `options snd-hda-intel model=dell-headset-multi` to the end of the file
+reboot
 
 # Advanced Features
 
