@@ -157,9 +157,9 @@ run the command `sudo modprobe r8822be`
 
 ### Configuring Audio Jack to Work With Microphones
 
-run the command `/etc/modprobe.d/alsa-base.conf`
-add `options snd-hda-intel model=dell-headset-multi` to the end of the file
-reboot
+run the command `/etc/modprobe.d/alsa-base.conf`    
+add `options snd-hda-intel model=dell-headset-multi` to the end of the file    
+reboot    
 
 # Advanced Features
 
