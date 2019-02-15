@@ -182,3 +182,18 @@ reboot
 For multitouch touchpad gestures, you can install libinput-gestures from the below github repo.
 
 https://github.com/bulletmark/libinput-gestures
+
+# System Monitoring and Power Management
+
+The following software can be used to monitor temperatures, adjust power management features, and control fans
+
+* TLP - Allows for adjusting power management settings
+     ` sudo apt install -y tlp tlp-rdw`    
+
+* HTop - A more advanced version of top for monitoring system load
+      ` sudo apt install -y htop`
+
+* PowerTop - Process monitor that shows power usage of running processes
+      ` sudo apt install -y powertop`
+      
+The following guide can be used to configure automatic fan control: [lm-sensors and pwmcontrol setup](http://tuxtweaks.com/2008/08/how-to-control-fan-speeds-in-ubuntu/)
