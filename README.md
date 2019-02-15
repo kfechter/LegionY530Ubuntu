@@ -109,20 +109,20 @@ If the above command does not get wifi working, you may need to perform steps un
 
 once wifi is working (or if you are using wired ethernet)
 
-run the command `sudo add-apt-repository ppa:teejee2008/ppa` and follow the prompt    
+run the command `sudo add-apt-repository ppa:teejee2008/ppa` and follow the prompt     
 run the command `sudo apt-get install -y ukuu`
 
 Open ukuu from the application screen, then find kernel v4.20 in the list and select it for installation.
 
 After the kernel is installed, reboot the laptop. Wifi should be working, but if it isnt follow the directions for Realtek Wifi cards underneath the additional notes section
 
-## 9. Install Nvidia drivers and Nvidia-prime packages. 
+## 8. Install Nvidia drivers and Nvidia-prime packages. 
 
 In the terminal, run the following commands, following any prompts
-`sudo add-apt-repository ppa:graphics-drivers/ppa`
+`sudo add-apt-repository ppa:graphics-drivers/ppa`    
 `sudo apt install nvidia-driver-415 nvidia-prime`
 
-## 10. Verify that the Nvidia drivers and Prime packages are installed and configured correctly.
+## 9. Verify that the Nvidia drivers and Prime packages are installed and configured correctly.
 run the following series of commands and verify the output
 
 ```
