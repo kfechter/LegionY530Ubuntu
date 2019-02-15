@@ -39,7 +39,7 @@ Now that the important information is out of the way, let's begin
 ## 1. Download the Ubuntu disk image and imaging software
 __NOTE: Using a version other than the latest LTS should work, but some guide steps may differ or not work__
 * [Ubuntu 18.04.2 LTS](http://releases.ubuntu.com/18.04/ubuntu-18.04.2-desktop-amd64.iso)
-* [Etcher](https://etcher.io/)
+* [Etcher](https://www.balena.io/etcher/)
 
 ## 2. Using Etcher, write the image to a USB Drive
 
