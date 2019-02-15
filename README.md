@@ -127,20 +127,20 @@ run the following command
 
 Add 'pci=noaer' after quiet splash     
 
-![Editing grub screenshot](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu//Images/nanoScreen.PNG)  
+![Editing grub screenshot](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/b5b7f94ebf3d11b0945afccb7330c3aef548e36a/Images/nanoScreen.PNG)  
 
 run the following command    
 ` sudo update-grub2`    
 
 reboot
 
-## 8. Install Nvidia drivers and Nvidia-prime packages. 
+## 9. Install Nvidia drivers and Nvidia-prime packages. 
 
 In the terminal, run the following commands, following any prompts    
 `sudo add-apt-repository ppa:graphics-drivers/ppa`    
 `sudo apt install -y nvidia-driver-415 nvidia-prime`
 
-## 9. Verify that the Nvidia drivers and Prime packages are installed and configured correctly.
+## 10. Verify that the Nvidia drivers and Prime packages are installed and configured correctly.
 run the following series of commands and verify the output
 
 ```
