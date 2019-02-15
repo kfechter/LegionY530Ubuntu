@@ -114,7 +114,7 @@ run the command `sudo apt-get install -y ukuu`
 
 Open ukuu from the application screen, then find kernel v4.20 (or latest kernel/point release) in the list and select it for installation.
 
-[Ukuu Screenshot](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/4772df4cd0484283c14f237402b8e941ed6b12ea/Images/ukuuScreen.PNG)
+![Ukuu Screenshot](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/4772df4cd0484283c14f237402b8e941ed6b12ea/Images/ukuuScreen.PNG)
 
 After the kernel is installed, reboot the laptop. Wifi should be working, but if it isnt follow the directions for Realtek Wifi cards underneath the additional notes section
 
