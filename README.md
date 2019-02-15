@@ -1,7 +1,3 @@
-:no_entry_sign: Development Stuff Ahead :no_entry_sign:
-#### If you find yourself reading this, you have stumbled upon a development version of the guide
-#### View the master version [here](https://github.com/kfechter/LegionY530Ubuntu)
-
 # Installing Ubuntu on the Legion Y530
 
 This repository provides scripts and a step by step on how to get Ubuntu running on the Lenovo Legion Y530.
@@ -33,7 +29,7 @@ To use Magic SysRq, hold down the right Alt key and PrtSc, and then type (In Ord
   * Camera Privacy Button - generates event in linux live?
   * Microphone Mute Button - Works in linux live?
   
-  __The issues with the above buttons not mapping will be fixed with the kernel upgrade to v4.20__
+  __The issues with some of the above buttons not mapping will be fixed with the kernel upgrade to v4.20__
       
 ##### Back up your data using Windows Backup or similar before continuing
 
@@ -109,14 +105,12 @@ If the above command does not get wifi working, you may need to perform steps un
 
 once wifi is working (or if you are using wired ethernet)
 
-run the command `sudo add-apt-repository ppa:teejee2008/ppa` and follow the prompt
-run the command ` sudo apt-get install -y ukuu`
+run the command `sudo add-apt-repository ppa:teejee2008/ppa` and follow the prompt    
+run the command `sudo apt-get install -y ukuu`
 
 Open ukuu from the application screen, then find kernel v4.20 in the list and select it for installation.
 
-After the kernel is installed, reboot the laptop. Wifi should be working, but if it isnt perform the following
-
-  
+After the kernel is installed, reboot the laptop. Wifi should be working, but if it isnt follow the directions for Realtek Wifi cards underneath the additional notes section
 
 ## 9. Install Nvidia drivers and Nvidia-prime packages. 
 
