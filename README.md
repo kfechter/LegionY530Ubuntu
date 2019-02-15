@@ -120,9 +120,9 @@ After the kernel is installed, reboot the laptop. Wifi should be working, but if
 
 ## 8. Install Nvidia drivers and Nvidia-prime packages. 
 
-In the terminal, run the following commands, following any prompts
+In the terminal, run the following commands, following any prompts    
 `sudo add-apt-repository ppa:graphics-drivers/ppa`    
-`sudo apt install nvidia-driver-415 nvidia-prime`
+`sudo apt install -y nvidia-driver-415 nvidia-prime`
 
 ## 9. Verify that the Nvidia drivers and Prime packages are installed and configured correctly.
 run the following series of commands and verify the output
