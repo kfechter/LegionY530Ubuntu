@@ -118,6 +118,22 @@ Open ukuu from the application screen, then find kernel v4.20 (or latest kernel/
 
 After the kernel is installed, reboot the laptop. Wifi should be working, but if it isnt follow the directions for Realtek Wifi cards underneath the additional notes section
 
+## 8. Disable AER to prevent log spam
+
+After upgrading to kernel 4.20.x, there will be many warnings/errors displayed on boot. These errors contain the text 'aer' These warnings don't appear affect boot, but are annoying. PCIe AER can be disabled, which will prevent these messages.    
+
+run the following command   
+` sudo nano /etc/default/grub`    
+
+Add 'pci=noaer' after quiet splash     
+
+![Editing grub screenshot](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu//Images/nanoScreen.PNG)  
+
+run the following command    
+` sudo update-grub2`    
+
+reboot
+
 ## 8. Install Nvidia drivers and Nvidia-prime packages. 
 
 In the terminal, run the following commands, following any prompts    
