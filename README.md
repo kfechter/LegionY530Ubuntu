@@ -45,7 +45,11 @@ __NOTE: Using a version other than the latest LTS should work, but some guide st
 
 After installing and opening Etcher, select your USB device and downloaded .iso and press the button labeled Flash!
 
-![Etcher Screenshot](https://github.com/kfechter/LegionY530Ubuntu/raw/master/Images/etcher3.PNG "Etcher Screenshot")
+![Etcher Screenshot](https://github.com/kfechter/LegionY530Ubuntu/raw/master/Images/etcherScreen.PNG "Etcher Screenshot")
+
+![Etcher Screenshot 2](https://github.com/kfechter/LegionY530Ubuntu/raw/master/Images/etcherScreen2.PNG "Etcher Screenshot")
+
+![Etcher Screenshot 3](https://github.com/kfechter/LegionY530Ubuntu/raw/master/Images/etcherScreen3.PNG "Etcher Screenshot")
 
 ## 3. Disable SecureBoot
 
