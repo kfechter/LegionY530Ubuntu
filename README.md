@@ -94,7 +94,7 @@ once you are at the desktop, open the terminal and run `sudo rmmod ideapad_lapto
 
 If the above command does not get wifi working, you may need to perform steps under "Additional Notes" at the bottom.    
 
-Without closing the terminal, run the following command `sudo apt-update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer. After rebooting, follow the above steps for getting wifi working. the next step will get wifi working permanently.
+Without closing the terminal, run the following command `sudo apt update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer. After rebooting, follow the above steps for getting wifi working. the next step will get wifi working permanently.
 
 ## 7. Use ukuu to update the kernel
 
@@ -173,7 +173,7 @@ run the command `sudo modprobe r8822be`
 
 ### Configuring Audio Jack to Work With Microphones
 
-run the command `/etc/modprobe.d/alsa-base.conf`    
+run the command `sudo nano /etc/modprobe.d/alsa-base.conf`    
 add `options snd-hda-intel model=dell-headset-multi` to the end of the file    
 reboot    
 
