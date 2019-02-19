@@ -168,11 +168,11 @@ to disable modeset for the nouveau module, follow the below steps
 
 reboot the machine, as soon as the screen turns purple (After the Legion logo screen), press esc. You should see a screen similar to the following.
 
-// TODO: Upload picture
+![Selecting Ubuntu in Grub](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/0fc36c44e069d4e157faa4b16e87cc9625a7c0e1/Images/grubSelectionScreen.png)
 
 highlight the entry that says "Ubuntu" and press 'e', you should get a screen that looks similar to the following.
 
-// TODO: Upload Picture
+![Adding Nouveau.modeset=0](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/0fc36c44e069d4e157faa4b16e87cc9625a7c0e1/Images/kernelOptions.png)
 
 find the section that says 'quiet splash', and add nouveau.modeset=0 to it so it reads 'quiet splash noveau.modeset=0'
 
