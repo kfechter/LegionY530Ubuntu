@@ -18,6 +18,8 @@ Remember: *<b>R</b>eboot <b>E</b>ven <b>I</b>f <b>S</b>ystem <b>U</b>tterly <b>B
 
 To use Magic SysRq, hold down the right Alt key and PrtSc, and then type (In Order) R, E, I, S, U, B. The machine should then reboot. If for some reason this doesn't work, then hold the power button down to power off the machine. 
 
+#### If the machine freezes shortly after login or before the login screen appears, follow the steps section 'disable nouveau modeset' under Additional Notes. These steps will have to be followed at every boot until the nvidia drivers are installed. 
+ 
 ### Some things to note before Beginning:
 
 * __This guide assumes decent knowledge of the Linux command line__
@@ -159,6 +161,22 @@ Should now output 'intel'
 If the above commands complete successfully, then you have successfully configured your Legion Y530 with Ubuntu.
 
 # Additional Notes
+
+### Disable Nouveau Modeset
+
+to disable modeset for the nouveau module, follow the below steps
+
+reboot the machine, as soon as the screen turns purple (After the Legion logo screen), press esc. You should see a screen similar to the following.
+
+// TODO: Upload picture
+
+highlight the entry that says "Ubuntu" and press 'e', you should get a screen that looks similar to the following.
+
+// TODO: Upload Picture
+
+find the section that says 'quiet splash', and add nouveau.modeset=0 to it so it reads 'quiet splash noveau.modeset=0'
+
+press F10 to boot with the changes.
 
 ### Nvidia Switching
 With kernel 4.20, rebooting is no longer necessary to switch profiles, however log out and log in is still required.
