@@ -228,5 +228,5 @@ To configure cpufrequtils, follow the steps below:
  run the command ` sudo nano /etc/default/cpufrequtils`    
  add ` SCALING_GOVERNOR=performance` to the end of the file     
  reboot the computer     
- verify that the governor is set to performance on battery by unplugging the computer and running ` cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor` it should return "performance"
+ verify that the governor is set to performance on battery by unplugging the computer and running     ` cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor` it should return "performance"
  
