@@ -224,9 +224,10 @@ The default governor for battery power is balanced. You may notice some lag in c
 
 To configure cpufrequtils, follow the steps below:     
 
- run the command ` sudo apt install -y cpufrequtils`    
- run the command ` sudo nano /etc/default/cpufrequtils`    
- add ` SCALING_GOVERNOR=performance` to the end of the file     
- reboot the computer     
- verify that the governor is set to performance on battery by unplugging the computer and running     ` cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor` it should return "performance"
+run the command ` sudo apt install -y cpufrequtils`    
+run the command ` sudo nano /etc/default/cpufrequtils`    
+add ` SCALING_GOVERNOR=performance` to the end of the file     
+reboot the computer     
+run the below command with the laptop unplugged. If the governor is set correctly, the terminal should output "performance"       
+` cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor`
  
