@@ -215,3 +215,20 @@ The following software can be used to monitor temperatures, adjust power managem
       ` sudo apt install -y powertop`
       
 The following guide can be used to configure automatic fan control: [lm-sensors and pwmcontrol setup](http://tuxtweaks.com/2008/08/how-to-control-fan-speeds-in-ubuntu/)
+
+# Setting Governor to performance to prevent lag on battery
+
+### This may decrease battery life, proceed with caution
+
+The default governor for battery power is balanced. You may notice some lag in certain activities, most notably opening GNOME overview. You can use cpufrequtils to force the governor to performance, which mitigates these performance issues.
+
+To configure cpufrequtils, follow the steps below:     
+
+run the command ` sudo apt install -y cpufrequtils`    
+run the command ` sudo nano /etc/default/cpufrequtils`    
+add ` SCALING_GOVERNOR="performance"` to the end of the file     
+run the command ` sudo systemctl disable ondemand`    
+reboot the computer     
+run the below command with the laptop unplugged. If the governor is set correctly, the terminal should output "performance"       
+` cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor`
+ 
