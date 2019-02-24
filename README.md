@@ -230,5 +230,8 @@ add ` SCALING_GOVERNOR="performance"` to the end of the file
 run the command ` sudo systemctl disable ondemand`    
 reboot the computer     
 run the below command with the laptop unplugged. If the governor is set correctly, the terminal should output "performance"       
-` cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor`
- 
+` cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor`   
+
+the output of the above command will differ from the screenshot below based on your desktop environment, shell or CPU. the below screenshot is taken from 18.04 with GNOME desktop environment, zsh, and the 8750H (6C/12T)    
+
+![CPU Freq Utils](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/6a3c1c5ca35dd97c644b5ca68e8a2dc580136365/Images/cpufreqUtils.png)
