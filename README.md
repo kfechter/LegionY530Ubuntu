@@ -214,7 +214,32 @@ The following software can be used to monitor temperatures, adjust power managem
 * PowerTop - Process monitor that shows power usage of running processes
       ` sudo apt install -y powertop`
       
-The following guide can be used to configure automatic fan control: [lm-sensors and pwmcontrol setup](http://tuxtweaks.com/2008/08/how-to-control-fan-speeds-in-ubuntu/)
+The following guide can be used to configure automatic fan control: [lm-sensors and pwmcontrol setup](http://tuxtweaks.com/2008/08/how-to-control-fan-speeds-in-ubuntu/)   
+
+# Getting Airplane mode button working
+
+The airplane mode button seems to work in TTY mode, but not in GUI mode. this can be fixed by setting the xmodmap for the keycode of the button in GUI mode. To get this working, follow the steps below. 
+
+run the command `gedit ~/.Xmodmap`    
+add the following contents, then save the file    
+` keycode 255 = XF86WLAN NoSymbol XF86WLAN `   
+run the following command ` gedit ~/.config/autostart/my-xmodmap.desktop`    
+add the following content, replacing <username> with your username, then save the file          
+
+``` 
+[Desktop Entry]
+Name=MyXmodmap   
+Exec=/usr/bin/xmodmap /home/<username>/.Xmodmap
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
+```
+ 
+run the command ` chmod +x ~/.config/autostart/my-xmodmap.desktop`
+
+restart the computer. 
+
+The airplane mode button should now work properly
 
 # Setting Governor to performance to prevent lag on battery
 
