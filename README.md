@@ -226,7 +226,8 @@ To configure cpufrequtils, follow the steps below:
 
 run the command ` sudo apt install -y cpufrequtils`    
 run the command ` sudo nano /etc/default/cpufrequtils`    
-add ` SCALING_GOVERNOR=performance` to the end of the file     
+add ` SCALING_GOVERNOR="performance"` to the end of the file     
+run the command ` sudo systemctl disable ondemand`    
 reboot the computer     
 run the below command with the laptop unplugged. If the governor is set correctly, the terminal should output "performance"       
 ` cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor`
