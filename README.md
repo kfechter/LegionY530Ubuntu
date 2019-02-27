@@ -113,7 +113,7 @@ add `blacklist ideapad_laptop` to the end of the file
 exit and save the file     
 reboot     
 
-![Blacklist](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/<commithash>/Images/modprobeBlacklist.jpg "Blacklist")
+![Blacklist](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/e16bd6c472d05cd1dd62e3b8801d0248cb6378e5/Images/modprobeBlacklist.PNG "Blacklist")
 
 ## 8. Install Nvidia drivers and Nvidia-prime packages. 
 
