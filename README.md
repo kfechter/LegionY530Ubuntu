@@ -1,3 +1,7 @@
+:no_entry_sign: Development Stuff Ahead :no_entry_sign:
+#### If you find yourself reading this, you have stumbled upon a development version of the guide
+#### View the master version [here](https://github.com/kfechter/LegionY530Ubuntu)
+
 # Installing Ubuntu on the Legion Y530
 
 This repository provides scripts and a step by step on how to get Ubuntu running on the Lenovo Legion Y530.
@@ -26,10 +30,11 @@ To use Magic SysRq, hold down the right Alt key and PrtSc, and then type (In Ord
 * __Following this guide will result in Windows being replaced with Ubuntu__
   * You can however, choose to install alongside your current OS
 * __Several features of the Legion will be unavailable on Linux__
-  * Screen Record Button - unknown to the keyboard driver?
-  * Airplane Mode Button - generates event in linux live?
-  * Camera Privacy Button - generates event in linux live?
-  * Microphone Mute Button - Works in linux live?
+* __Some buttons will not work, as they are mapped by the ideapad_laptop module__
+  * Screen Record Button
+  * Airplane Mode Button
+  * Camera Privacy Button
+  * Microphone Mute Button
   
   __The issues with some of the above buttons not mapping will be fixed with the kernel upgrade to v4.20__
       
@@ -86,7 +91,7 @@ Select the flash drive and press enter to boot. on the screen that pops up, sele
 
 Once the live desktop loads, open a terminal and run the following command `sudo rmmod ideapad_laptop`. This command will enable wifi. If you are using a wired connection, this step isn't necessary.
 
-If the above command does not get wifi working, you may need to perform steps under "Additional Notes" at the bottom.  
+If the above command does not get wifi working, you may need to perform steps for realtek wifi under "Additional Notes" at the bottom.  
 
 Select the "Install Ubuntu" icon on the desktop and follow the wizard to install Ubuntu on your desired drive. Once completed, select the option to restart the computer.
 
@@ -98,53 +103,25 @@ If the above command does not get wifi working, you may need to perform steps un
 
 Without closing the terminal, run the following command `sudo apt update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer. After rebooting, follow the above steps for getting wifi working. the next step will get wifi working permanently.
 
-## 7. Use ukuu to update the kernel
+## 7. Blacklist the ideapad_laptop module
 
-### There have been many users having issues with kernel versions higher than 4.20.10. Choosing this version is the safest bet
+__[If you still want to upgrade the kernel rather than blacklisting the module, click here](Sections/ukuu.md)__
 
-open a terminal
+In a terminal, run the following command     
+`sudo nano /etc/modprobe.d/blacklist.conf`     
+add `blacklist ideapad_laptop` to the end of the file      
+exit and save the file     
+reboot     
 
+![Blacklist](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/e16bd6c472d05cd1dd62e3b8801d0248cb6378e5/Images/modprobeBlacklist.PNG "Blacklist")
 
-If wifi is not working, try performing the following
-
-run `sudo rmmod ideapad_laptop`
-
-If the above command does not get wifi working, you may need to perform steps under "Additional Notes" at the bottom.  
-
-once wifi is working (or if you are using wired ethernet)
-
-run the command `sudo add-apt-repository ppa:teejee2008/ppa` and follow the prompt     
-run the command `sudo apt-get install -y ukuu`
-
-Open ukuu from the application screen, then find kernel v4.20 (or latest kernel/point release) in the list and select it for installation.
-
-![Ukuu Screenshot](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/4772df4cd0484283c14f237402b8e941ed6b12ea/Images/ukuuScreen.PNG)
-
-After the kernel is installed, reboot the laptop. Wifi should be working, but if it isnt follow the directions for Realtek Wifi cards underneath the additional notes section
-
-## 8. Disable AER to prevent log spam (kernel 4.20.10 only)
-
-After upgrading to kernel 4.20.10, there will be many warnings/errors displayed on boot. These errors contain the text 'aer' These warnings don't appear affect boot, but are annoying. PCIe AER can be disabled, which will prevent these messages.    
-
-run the following command   
-` sudo nano /etc/default/grub`    
-
-Add 'pci=noaer' after quiet splash     
-
-![Editing grub screenshot](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/b5b7f94ebf3d11b0945afccb7330c3aef548e36a/Images/nanoScreen.PNG)  
-
-run the following command    
-` sudo update-grub2`    
-
-reboot
-
-## 9. Install Nvidia drivers and Nvidia-prime packages. 
+## 8. Install Nvidia drivers and Nvidia-prime packages. 
 
 In the terminal, run the following commands, following any prompts    
 `sudo add-apt-repository ppa:graphics-drivers/ppa`    
 `sudo apt install -y nvidia-driver-415 nvidia-prime`
 
-## 10. Verify that the Nvidia drivers and Prime packages are installed and configured correctly.
+## 9. Verify that the Nvidia drivers and Prime packages are installed and configured correctly.
 run the following series of commands and verify the output
 
 ```
