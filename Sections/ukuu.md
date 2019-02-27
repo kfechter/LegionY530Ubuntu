@@ -1,6 +1,6 @@
 # Use ukuu to update the kernel
 
-### :no_entry_sign: Updating the kernel to something outside of the kernel shipped with Ubuntu LTS can cause issues. Support for these changes is limited. You assume all risks when performing the following steps.
+##### :no_entry_sign: Updating the kernel to something outside of the kernel shipped with Ubuntu LTS can cause issues. Support for these changes is limited. You assume all risks when performing the following steps.
 
 open a terminal
 
