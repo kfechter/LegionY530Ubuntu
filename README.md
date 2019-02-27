@@ -105,6 +105,8 @@ Without closing the terminal, run the following command `sudo apt update && sudo
 
 ## 7. Blacklist the ideapad_laptop module
 
+__[If you still want to upgrade the kernel rather than blacklisting the module, click here](sections/ukuu.md)__
+
 In a terminal, run the following command     
 `sudo nano /etc/modprobe.d/blacklist.conf`     
 add `blacklist ideapad_laptop` to the end of the file      
