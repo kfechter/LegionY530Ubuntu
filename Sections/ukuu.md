@@ -2,6 +2,8 @@
 
 ##### :no_entry_sign: Updating the kernel to something outside of the kernel shipped with Ubuntu LTS can cause issues. Support for these changes is limited. You assume all risks when performing the following steps.
 
+##### Remember: if this breaks your system, you are allowed to keep both halves
+
 open a terminal
 
 
