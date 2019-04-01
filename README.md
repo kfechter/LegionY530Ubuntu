@@ -164,6 +164,10 @@ run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822b
 run the command `sudo rmmod r8822be`    
 run the command `sudo modprobe r8822be`
 
+As stated in below bug request this process doesn't work for Kernel version 4.18.0-12 and higher. You would get 'Operation not permitted' error on last command. Disabling 'Secure Boot' in BIOS would fix the problem as stated in comments of bug request.
+
+https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1806472
+
 ### Configuring Audio Jack to Work With Microphones
 
 run the command `sudo nano /etc/modprobe.d/alsa-base.conf`    
