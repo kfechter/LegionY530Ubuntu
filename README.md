@@ -168,7 +168,17 @@ run the command `sudo modprobe r8822be`
 
 run the command `sudo nano /etc/modprobe.d/alsa-base.conf`    
 add `options snd-hda-intel model=dell-headset-multi` to the end of the file    
-reboot    
+reboot
+
+### Ubuntu 19.04 beta (stable release April 18, 2019)
+
+If none of the previous steps for fixing the Wifi issue have been met with success and you **do not wish to update the kernal**, you may have sucess using the [beta release of Ubuntu 19.04](http://rs.releases.ubuntu.com/19.04/).
+
+Ubuntu 19.04 uses Linux kernel 5.x.x which includes many of the fixes described here namely wifi, and the need to blacklist the *ideapad_laptop* kernel module.
+- [Linux kernel 5.0 overview from kernelnewbies.org](https://kernelnewbies.org/Linux_5.0)
+- [High level overview of changes by Phoronix](https://www.phoronix.com/scan.php?page=article&item=linux-2019-features&num=1)
+
+Additionally, the installation of the Nvidia drivers and Nvidia-prime packages can now be done using the builtin *Software & Updates* utility from the *Additional Drivers* tab (`nvidia-drivers-418`).
 
 # Advanced Features
 
