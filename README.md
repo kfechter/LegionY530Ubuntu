@@ -176,7 +176,7 @@ reboot
 
 ### Ubuntu 19.04 beta (stable release April 18, 2019)
 
-If none of the previous steps for fixing the Wifi issue have been met with success and you **do not wish to update the kernal**, you may have sucess using the [beta release of Ubuntu 19.04](http://rs.releases.ubuntu.com/19.04/).
+If none of the previous steps for fixing the Wifi issue have been met with success and you **do not wish to update the kernel**, you may have sucess using the [beta release of Ubuntu 19.04](http://rs.releases.ubuntu.com/19.04/).
 
 Ubuntu 19.04 uses Linux kernel 5.x.x which includes many of the fixes described here namely wifi, and the need to blacklist the *ideapad_laptop* kernel module.
 - [Linux kernel 5.0 overview from kernelnewbies.org](https://kernelnewbies.org/Linux_5.0)
