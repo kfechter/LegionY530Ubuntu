@@ -1,3 +1,5 @@
+:no_entry_sign: Development Guide Ahead, please follow the [master branch guide](https://github.com/kfechter/LegionY530Ubuntu) :no_entry_sign:
+
 #### Please Read the [Considerations and notes](Sections/Considerations.md) Before following this guide.
 
 #### If you want to install a version older than 18.04.3 or 19.04, follow the guide [Here](https://github.com/kfechter/LegionY530Ubuntu/tree/18.04.2-Install-Guide) Instead
