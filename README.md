@@ -1,5 +1,3 @@
-:no_entry_sign: Development Guide Ahead, please follow the [master branch guide](https://github.com/kfechter/LegionY530Ubuntu) :no_entry_sign:
-
 #### Please Read the [Considerations and notes](Sections/Considerations.md) Before following this guide.
 
 # Installing Ubuntu on the Legion Y530
