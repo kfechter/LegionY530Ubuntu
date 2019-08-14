@@ -15,4 +15,4 @@ After installing and opening Etcher, select your USB device and downloaded .iso 
 
 ![Etcher Screenshot 3](../Images/etcherScreen3.PNG "Etcher Screenshot")
 
-Continue to [Install Ubuntu](InstallUbuntu.md)
+Continue to [Disable SecureBoot](DisableSecureBoot.md)
