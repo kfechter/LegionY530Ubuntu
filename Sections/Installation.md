@@ -1,6 +1,6 @@
 # Install Ubuntu
 
-Once the desktop loads, double click the setup icon on the desktop. It should have the label "Install Ubuntu \<version>"
+Once the desktop loads, double click the setup icon on the desktop. It should have a label with the words "Install Ubuntu"
 
 The following screenshots are from a 18.04.3 installation with SecureBoot enabled. The options presented may differ between versions and depending on the configuration of your laptop.
 
