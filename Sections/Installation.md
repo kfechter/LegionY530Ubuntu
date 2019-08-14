@@ -4,6 +4,9 @@ Once the desktop loads, double click the setup icon on the desktop. It should ha
 
 The following screenshots are from a 18.04.3 installation with SecureBoot enabled. The options presented may differ between versions and depending on the configuration of your laptop.
 
+__Note: Ubuntu 18.04.3 and up can automatically install the graphics drivers. make sure to select the checkbox to install the drivers.__   
+
+
 ![Install Welcome](../Images/Install1.png)
 
 ![Install Language](../Images/Install2.png)
@@ -14,7 +17,6 @@ The following screenshots are from a 18.04.3 installation with SecureBoot enable
 
 ![Install Device Selection](../Images/Install5.png)
 
-__Note: Ubuntu 18.04.3 and up can automatically install the graphics drivers. make sure to select the checkbox to install the drivers.__   
 
 Once you click install now, the installation will ask you a few questions (Time Zone, Username, machine name, password, login options). Provide values for the settings and then sit back and watch the progress.
 
