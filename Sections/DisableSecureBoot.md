@@ -1,6 +1,4 @@
-# Install Ubuntu without SecureBoot
-
-To install Ubuntu without secureboot enabled, follow the steps below. 
+# Disable SecureBoot
 
 To get to advanced startup, open windows settings, then click Update & Security. Select Recovery from the left hand side, and click the button labeled restart now under Advanced Startup. 
 
