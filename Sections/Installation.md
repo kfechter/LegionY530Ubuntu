@@ -1,4 +1,4 @@
-##### Install Ubuntu
+# Install Ubuntu
 
 Once the desktop loads, double click the setup icon on the desktop. It should have the label "Install Ubuntu \<version>"
 
