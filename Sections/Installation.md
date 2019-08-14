@@ -2,7 +2,7 @@
 
 Once the desktop loads, double click the setup icon on the desktop. It should have a label with the words "Install Ubuntu"
 
-The following screenshots are from a 18.04.3 installation with SecureBoot enabled. The options presented may differ between versions and depending on the configuration of your laptop.
+The following screenshots are from a 18.04.3 installation. If you are using a different version, the options or UI may be different. 
 
 __Note: Ubuntu 18.04.3 and up can automatically install the graphics drivers. make sure to select the checkbox to install the drivers.__   
 
