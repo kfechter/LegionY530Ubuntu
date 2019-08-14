@@ -1,4 +1,4 @@
-# Disable SecureBoot
+# Disable SecureBoot and Boot the Live USB
 
 To get to advanced startup, open windows settings, then click Update & Security. Select Recovery from the left hand side, and click the button labeled restart now under Advanced Startup. 
 
