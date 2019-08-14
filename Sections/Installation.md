@@ -2,7 +2,7 @@
 
 Once the desktop loads, double click the setup icon on the desktop. It should have a label with the words "Install Ubuntu"
 
-The following screenshots are from a 18.04.3 installation. If you are using a different version, the options or UI may be different. 
+The following screenshots are from a 18.04.3 installation. If you are using a different version, the options or UI may be different. Available drives will differ based on what hardware is installed in your laptop
 
 __Note: Ubuntu 18.04.3 and up can automatically install the graphics drivers. make sure to select the checkbox to install the drivers.__   
 
