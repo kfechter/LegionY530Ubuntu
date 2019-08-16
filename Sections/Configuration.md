@@ -1,3 +1,14 @@
+# Configuration
+
+### Install any available updates
+Run the following command `sudo apt update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer. 
+
+### Verify that prime-select commands are available
+If you selected the option to install third party software, you should be able to run ` sudo prime-select <gpu> ` where gpu can be either nvidia or intel, and then log off and back on to complete the switch. If this doesn't work, try rebooting after the switch.
+
+running the command ` prime-select query ` should show which GPU profile is active.
+
+
 # Advanced Features
 
 ### Multitouch Touchpad Gestures
