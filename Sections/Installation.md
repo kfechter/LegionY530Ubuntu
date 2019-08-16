@@ -4,29 +4,42 @@ Once the desktop loads, double click the setup icon on the desktop. It should ha
 
 The following screenshots are from a 18.04.3 installation. If you are using a different version, the options or UI may be different. Available drives will differ based on what hardware is installed in your laptop
 
-__Note: Ubuntu 18.04.3 and up can automatically install the graphics drivers. make sure to select the checkbox to install the drivers.__   
+![Install Welcome](../Images/Installation/WelcomeScreen.png)
+
+![Install Language](../Images/Installation/LanguageScreen.png)
+
+__Note: The network screen may or may not appear Depending on whether or not you are already connected.__
+
+![Network Selection](../Images/Installation/NetworkScreen.png)
+
+__Note: The option for installing third party software (marked in red), should be selected to set up the nvidia drivers and optimus.__
+
+![Update Options](../Images/Installation/UpdateOptions.png)
+
+__Note: Depending on your machine configuration, you may see different options for installation here__
+![Installation Type](../Images/Installation/InstallationType.png)
+
+Depending on what you select on the previous screen, you will get one of the two following screens. they allow you to select which drive to install on. 
+
+![Dual Boot](../Images/Installation/DualBoot.png)
+
+![Clean Install](../Images/Installation/CleanInstall.png)
+
+Once you click the install now button, you will see the parition confirmation dialog. 
+
+![Partition Confirmation](../Images/Installation/PartitionConfirmation.png)
+
+The next two screens will allow you to configure time zone, user, and machine name
+
+![Time Zone](../Images/Installation/TimeZone.png)
+
+![User Info](../Images/Installation/UserInfo.png)
+
+You will then see a screen with a progress bar showing the install progress. Once you see the installation complete dialog, select the option to reboot, then continue with the guide. 
+
+![Install Progress](../Images/Installation/InstallProgress.png)
+
+![Finished](../Images/Installation/InstallComplete.png) 
 
 
-![Install Welcome](../Images/Install1.png)
-
-![Install Language](../Images/Install2.png)
-
-![Install Options](../Images/Install3.png)
-
-![Install Drives](../Images/Install4.png)
-
-![Install Device Selection](../Images/Install5.png)
-
-
-Once you click install now, the installation will ask you a few questions (Time Zone, Username, machine name, password, login options). Provide values for the settings and then sit back and watch the progress.
-
-Once the Installation completes, you can select the reboot option. Complete the wizard, then continue with the guide.
-
-##### Install any available updates
-
-Run the following command `sudo apt update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer. 
-
-#### __Note: After this, you should be able to run ` sudo prime-select <gpu> ` where gpu can be either nvidia or intel, and then log off and back on to complete the switch. If this doesn't work, try rebooting after the switch.__    
-
-
-If you want some additional configurations or helpful software, you can view the [Advanced Features Guide](Advanced.md)
+Continue to [Configuration](Configuration.md)
