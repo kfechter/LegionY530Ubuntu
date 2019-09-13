@@ -22,4 +22,4 @@ You may now reboot the computer without performing the nouveau.modeset=0 steps. 
 
 #### __Note: After this, you should be able to run ` sudo prime-select <gpu> ` where gpu can be either nvidia or intel, and then log off and back on to complete the switch. If this doesn't work, try rebooting after the switch.__
 
-Your OS is fully configured, but if you want some additional configurations or helpful software, you can view the [Advanced Features Guide](Advanced.md)
+Your OS is fully configured, but if you want some additional configurations or helpful software, you can view the [Advanced Features Guide](Configuration.md)
