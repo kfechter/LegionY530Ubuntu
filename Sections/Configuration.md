@@ -36,7 +36,9 @@ The following software can be used to monitor temperatures, adjust power managem
 * PowerTop - Process monitor that shows power usage of running processes
       ` sudo apt install -y powertop`
       
-The following guide can be used to configure automatic fan control: [lm-sensors and pwmcontrol setup](http://tuxtweaks.com/2008/08/how-to-control-fan-speeds-in-ubuntu/)   
+### Fan Control
+
+looks like standard fan control stuff doesn't work in ubuntu on the Y530. lm-sensors and pwmconfig don't find any fan controllers. It's possible that fan control is surfaced through a different interface as nbfc on windows can read fan percentage. Fn+q sets the fans to a higher speed.
 
 ### Getting Airplane mode button working
 
