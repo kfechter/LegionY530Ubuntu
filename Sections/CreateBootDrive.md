@@ -1,7 +1,8 @@
 # Create Ubuntu Live USB
 
-## Download the Ubuntu disk image and imaging software
-* [Ubuntu 18.04.3 LTS](http://releases.ubuntu.com/18.04/ubuntu-18.04.3-desktop-amd64.iso) 
+## Download Ubuntu LTS disk image and imaging software
+* ~[Ubuntu 20.04 LTS](http://releases.ubuntu.com/20.04/ubuntu-20.04-desktop-amd64.iso)~
+* ~[Ubuntu 18.04.4 LTS](http://releases.ubuntu.com/18.04/ubuntu-18.04.4-desktop-amd64.iso)~
 **NOTE: Non LTS Releases may work, but are not supported by this guide**
 * [Etcher](https://www.balena.io/etcher/)
 
