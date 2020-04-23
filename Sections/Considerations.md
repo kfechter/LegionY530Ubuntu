@@ -1,10 +1,11 @@
 These steps were tested on a Legion with the following Specs, but should work for all configurations:
 
-* i7-8750H
+* Intel<sup>&reg;</sup>&nbsp; Core<sup>&trade;</sup> &nbsp;i7-8750H
 * 32GB DDR4
 * 1920x1080 Resolution (60Hz)
 * 512GB NVMe SSD + 500GB SATA SSD
-* Geforce GTX 1050Ti
+* Geforce GTX 1050Ti + Intel<sup>&reg;</sup>&nbsp; UHD 630
+* Intel 9560 WiFi + BT
 
 However this should work on all configurations.
 

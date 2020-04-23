@@ -8,13 +8,6 @@ run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822b
 run the command `sudo rmmod r8822be`    
 run the command `sudo modprobe r8822be`
 
-##### NOTE: The below bug has fixes released
-
-~~As stated in below bug request this process doesn't work for Kernel version 4.18.0-12 and higher. You would get 'Operation not permitted' error on last command. Disabling 'Secure Boot' in BIOS would fix the problem as stated in comments of bug request.~~
-
-~~https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1806472~~
-
-
 ### Laptop seems to freeze before/after/during login screen
 
 If your laptop seems to freeze at any point before installing the nvidia drivers, you may need to disable nouveau modeset during boot until the drivers are installed. To disable modeset, follow the steps below.
@@ -48,7 +41,7 @@ The most likely cause is you have optane. You can confirm this by opening PowerS
 
 ` Get-PhysicalDisk`
 
-If the output contains a device with a FriendlyName of Intel Optane+<xxxGB>HDD Where xxx will be a capacity, you have optane. To get ubuntu installed in a dual boot scenario with optane follow the steps below. 
+If the output contains a device with a FriendlyName of Intel Optane+xxxGB HDD Where xxx will be a capacity, you have optane. To get ubuntu installed in a dual boot scenario with optane follow the steps below. 
 
 Instead of selecting "Install Ubuntu," select the "Try Ubuntu" option. Then open a terminal and issue the following command
 
