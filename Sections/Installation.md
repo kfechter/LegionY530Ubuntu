@@ -12,7 +12,7 @@ __Note: The network screen may or may not appear Depending on whether or not you
 
 ![Network Selection](../Images/Installation/NetworkScreen.png)
 
-__Note: The option for installing third party software (marked in red), should be selected to set up the nvidia drivers and optimus.__
+__Note: The option for installing third party software is optional, however it is recommended to select this.__
 
 ![Update Options](../Images/Installation/UpdateOptions.png)
 
