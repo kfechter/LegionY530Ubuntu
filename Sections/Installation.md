@@ -45,5 +45,4 @@ You will then see a screen with a progress bar showing the install progress. Onc
 
 ![Finished](../Images/Installation/InstallComplete.png) 
 
-
 Continue to [Configuration](Configuration.md)
