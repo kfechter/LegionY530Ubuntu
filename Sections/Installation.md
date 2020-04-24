@@ -2,7 +2,7 @@
 
 Once the desktop loads, double click the setup icon on the desktop. It should have a label with the words "Install Ubuntu"
 
-The following screenshots are from a 18.04.3 installation. If you are using a different version, the options or UI may be different. Available drives will differ based on what hardware is installed in your laptop
+The following screenshots are from a 20.04 installation. If you are using a different version, the options or UI may be different. Available drives will differ based on what hardware is installed in your laptop
 
 ![Install Welcome](../Images/Installation/WelcomeScreen.png)
 
@@ -12,20 +12,24 @@ __Note: The network screen may or may not appear Depending on whether or not you
 
 ![Network Selection](../Images/Installation/NetworkScreen.png)
 
-__Note: The option for installing third party software is optional, however it is recommended to select this.__
+__Note: The option for installing third party software is optional, but recommended.__
 
 ![Update Options](../Images/Installation/UpdateOptions.png)
 
 __Note: Depending on your machine configuration, you may see different options for installation here__
 ![Installation Type](../Images/Installation/InstallationType.png)
 
-Depending on what you select on the previous screen, you will get one of the two following screens. they allow you to select which drive to install on. 
+ If you select 'Install Alongside Windows' while Bitlocker is enabled, you may see a screen similar to below. Follow the directions to disable bitlocker.
+
+![Bitlocker](../Images/Installation/BitLocker.png)
+
+ Depending on which installation type you select, you will get one of two screens. they allow you to select which drive to install on (in systems with multiple drives), as well as other partition options.
 
 ![Dual Boot](../Images/Installation/DualBoot.png)
 
 ![Clean Install](../Images/Installation/CleanInstall.png)
 
-Once you click the install now button, you will see the parition confirmation dialog. 
+Once you click the install now button, you should see the parition confirmation dialog. 
 
 ![Partition Confirmation](../Images/Installation/PartitionConfirmation.png)
 
