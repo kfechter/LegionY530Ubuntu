@@ -1,6 +1,3 @@
-### If you find yourself reading this, you have stumbled upon a development version of the guide
-### View the master version [here](https://github.com/kfechter/LegionY530Ubuntu) 
-
 #### Please Read the [Considerations and notes](Sections/Considerations.md) Before following this guide.
 
 # Installing Ubuntu on the Legion Y530
