@@ -51,20 +51,18 @@ looks like standard fan control stuff doesn't work in ubuntu on the Y530. lm-sen
 ~~run the following command ` gedit ~/.config/autostart/my-xmodmap.desktop`~~    
 ~~add the following content, replacing <username> with your username, then save the file~~         
 
-~~``` 
-[Desktop Entry]
-Name=MyXmodmap   
-Exec=/usr/bin/xmodmap /home/<username>/.Xmodmap
-Terminal=false
-Type=Application
-X-GNOME-Autostart-enabled=true
-```~~
+~~[Desktop Entry]~~
+~~Name=MyXmodmap~~  
+~~Exec=/usr/bin/xmodmap /home/<username>/.Xmodmap
+~~Terminal=false
+~~Type=Application
+~~X-GNOME-Autostart-enabled=true
  
-run the command ` chmod +x ~/.config/autostart/my-xmodmap.desktop`
+~~run the command ` chmod +x ~/.config/autostart/my-xmodmap.desktop`~~
 
-restart the computer. 
+~~restart the computer.~~
 
-The airplane mode button should now work properly
+~~The airplane mode button should now work properly~~
 
 ### Setting Governor to performance to prevent lag on battery
 
