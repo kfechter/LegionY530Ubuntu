@@ -36,34 +36,7 @@ The following software can be used to monitor temperatures, adjust power managem
 * PowerTop - Process monitor that shows power usage of running processes
       ` sudo apt install -y powertop`
       
-### Fan Control
-
-looks like standard fan control stuff doesn't work in ubuntu on the Y530. lm-sensors and pwmconfig don't find any fan controllers. It's possible that fan control is surfaced through a different interface as nbfc on windows can read fan percentage. Fn+q sets the fans to a higher speed.
-
-### Getting Airplane mode button working
-
-The airplane mode button seems to work in TTY mode, but not in GUI mode. this can be fixed by setting the xmodmap for the keycode of the button in GUI mode. To get this working, follow the steps below. 
-
-run the command `gedit ~/.Xmodmap`    
-add the following contents, then save the file    
-` keycode 255 = XF86WLAN NoSymbol XF86WLAN `   
-run the following command ` gedit ~/.config/autostart/my-xmodmap.desktop`    
-add the following content, replacing <username> with your username, then save the file          
-
-``` 
-[Desktop Entry]
-Name=MyXmodmap   
-Exec=/usr/bin/xmodmap /home/<username>/.Xmodmap
-Terminal=false
-Type=Application
-X-GNOME-Autostart-enabled=true
-```
- 
-run the command ` chmod +x ~/.config/autostart/my-xmodmap.desktop`
-
-restart the computer. 
-
-The airplane mode button should now work properly
+#### 20.04 has fixed the airplane mode button issue. This was possibly only an issue with Gnome. this message will be removed in the future as 20.04+ is the recommended LTS
 
 ### Setting Governor to performance to prevent lag on battery
 
