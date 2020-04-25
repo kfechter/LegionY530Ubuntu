@@ -40,7 +40,7 @@ The following software can be used to monitor temperatures, adjust power managem
 
 looks like standard fan control stuff doesn't work in ubuntu on the Y530. lm-sensors and pwmconfig don't find any fan controllers. It's possible that fan control is surfaced through a different interface as nbfc on windows can read fan percentage. Fn+q sets the fans to a higher speed.
 
-### 20.04 has fixed this issue. This was possibly only an issue with Gnome. this section will be removed in the future as 20.04 is the recommended LTS
+##### 20.04 has fixed this issue. This was possibly only an issue with Gnome. this section will be removed in the future as 20.04 is the recommended LTS
 ~~### Getting Airplane mode button working~~
 
 ~~The airplane mode button seems to work in TTY mode, but not in GUI mode. this can be fixed by setting the xmodmap for the keycode of the button in GUI mode. To get this working, follow the steps below.~~
