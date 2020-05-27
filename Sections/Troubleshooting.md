@@ -40,6 +40,11 @@ if after doing sudo prime-select nvidia, you notice that external screens don't 
 
 ##### __Note: If you deviate from the stock kernel, this may cause issues with the nvidia drivers__
 
+##### __Note: the nvidia-44x drivers seem to have issues with 20.04. Reccomendation is downgrade to 435 through the additional drivers settings.__
+
+### Ubuntu does not detect my nvidia card
+This seems to be a result of doing an in-place upgrade from 18.04/19.xx with working GPU drivers to 20.04. The only solution in this scenario is to perform a clean install. Reported by [@matdurand](https://github.com/matdurand). [Github Issue #98](https://github.com/kfechter/LegionY530Ubuntu/issues/98)
+
 ### Ubuntu doesn't detect my disk drives/Doesn't detect Windows is installed.
 
 Kudos to Github user [@tommyalvarez](https://github.com/tommyalvarez) and [This site](https://davidvielmetter.com/tricks/installing-ubuntu-dual-boot-on-a-dell-precision-which-already-runs-windows-10/) for this information
