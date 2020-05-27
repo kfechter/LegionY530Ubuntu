@@ -24,6 +24,11 @@ To use Magic SysRq, hold down the right Alt key and PrtSc, and then type (In Ord
 
 ### Back up your data using Windows Backup or similar before continuing
 
+### Intel RST (iRST)
+If your machine came configured with iRST (Generally only optane models), 20.04 may show you a warning telling you to turn it off. If this happens, in the BIOS, change the SATA mode to AHCI instead of Intel RST Premium. See [Issue #99](https://github.com/kfechter/LegionY530Ubuntu/issues/99)
+
+**NOTE: If windows has been installed with Optane or RST configured, disabling it will likely render Windows non bootable.**
+
 # Features that will not work
 
 * Screen Record Button - This shares scancodes with L_SHIFT and L_CTRL. Since scancodes cannot be changed without hardware modification, this is not easily fixable. 
