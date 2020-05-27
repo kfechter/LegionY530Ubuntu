@@ -13,6 +13,8 @@ run the command `sudo modprobe r8822be`
 ### Installation has warning about disabling Intel Rapid Storage Technology (iRST)
 If your machine came configured with iRST (Generally only optane models), 20.04 may show you a warning telling you to turn it off. If this happens, in the BIOS, change the SATA mode to AHCI instead of Intel RST Premium [Issue #99](https://github.com/kfechter/LegionY530Ubuntu/issues/99)
 
+**NOTE: If windows has been installed with Optane or RST configured, disabling it will likely render Windows non bootable.**
+
 ### Laptop seems to freeze before/after/during login screen
 
 If your laptop seems to freeze at any point before installing the nvidia drivers, you may need to disable nouveau modeset during boot until the drivers are installed. To disable modeset, follow the steps below.
