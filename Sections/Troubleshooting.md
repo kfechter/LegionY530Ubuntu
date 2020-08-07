@@ -29,7 +29,7 @@ highlight the entry that says "Ubuntu" and press 'e', you should get a screen th
 
 ![Adding Nouveau.modeset=0](../Images/kernelOptions.png)
 
-find the section that says 'quiet splash', and add nouveau.modeset=0 to it so it reads 'quiet splash noveau.modeset=0'
+find the section that says 'quiet splash', and add `nouveau.modeset=0` to it so it reads 'quiet splash nouveau.modeset=0'
 
 press F10 to boot with the changes.
 
