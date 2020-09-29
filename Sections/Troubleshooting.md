@@ -62,3 +62,22 @@ Instead of selecting "Install Ubuntu," select the "Try Ubuntu" option. Then open
 It will ask if you want to delete metadata, you can say yes to this. 
 
 You can now exit the terminal and follow the guide to install Ubuntu in a dualboot scenario
+
+### When you enter your password and click Enter you get the login screen again
+
+On the login screen press Ctrl + Alt + F3
+Then log in in the console  
+First you enter your name(The name you chose when you installed Ubuntu)  
+Then you enter your password(! Note: The password is not shown when typed)  
+Then press enter  
+After you are logged in type the following commands:  
+&nbsp;&nbsp; cd /  
+&nbsp;&nbsp; cd etc/default/  
+&nbsp;&nbsp; sudo nano grub  
+Delete the word splash  https://prnt.sc/u8s87l   →  https://prnt.sc/u8s98x  
+Press Ctrl + X to save  
+Select “Yes”  
+Input command:  
+&nbsp;&nbsp; sudo update-grub  
+Hold Alt and the right arrow key until you go back to the login screen
+Restart  
