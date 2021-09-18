@@ -1,3 +1,5 @@
+🚫 🚫 ## Use the [master](https://github.com/kfechter/LegionY530Ubuntu/tree/master "master branch") branch, as things here may not have been tested 🚫 🚫
+
 #### Please Read the [Considerations and notes](Sections/Considerations.md) Before following this guide.
 
 # Installing Ubuntu on the Legion Y530
