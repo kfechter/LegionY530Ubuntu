@@ -81,3 +81,7 @@ Input command:
 &nbsp;&nbsp; sudo update-grub  
 Hold Alt and the right arrow key until you go back to the login screen
 Restart  
+
+### When nothing of the above works (and you feel like giving up)
+
+Try the Nvidia version of Pop\!\_OS 20.04, which is based on Ubuntu. Anecdotical evidence tells it may very well work straight out of the box. https://pop.system76.com/
